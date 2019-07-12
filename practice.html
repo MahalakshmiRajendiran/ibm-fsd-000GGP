@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script type="text/javascript" >
+            function func(){
+                var select=document.getElementById("selectbox");
+                var opt=select.options[select.selectedIndex].value;
+                if(opt == clsa)
+                {
+                    <a href="file:///C:/Users/MahalakshmiRajendira/Documents/classA.html"/>
+                }
+                else{
+                    <a href="file:///C:/Users/MahalakshmiRajendira/Documents/classB.html"/>
+                }
+               
+            }
+
+                </script>
+        <style>
+        .cls-input{
+            border : 1px solid;
+        }
+        .cls-input-spacing{
+            display : block;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        </style>
+    </head>
+    <body onload="fetchALLTrainer()">
+        <div>
+            <fieldset><legend>TRAINER</legend>
+                <input type="number" id="tId" class="cls-input cls-input-spacing" placeholder="Id"/>
+                <input type="text" id="tName" class="cls-input cls-input-spacing" placeholder="Name"/>
+                <input type="email" id="tEmail" class="cls-input cls-input-spacing" placeholder="Email"/>
+                <form>
+                        <input type="checkbox" id="mat" class="cls-input" name="skill" onClick="checkbox();" value="Maths">Maths</input>
+                        <br>
+                        <input type="checkbox" id="eng" class="cls-input" name="skill" onClick="checkbox();" value="English">English</input>
+                        <br>
+                        <input type="checkbox" id="sans" class="cls-input" name="skill" onClick="checkbox();" value="Sanskrit">SANSKRIT</input>
+                        <br>
+                        <input type="checkbox" id="soc" class="cls-input" name="skill" onClick="checkbox();" value="Social">SOCIAL</input>
+                        <br>
+                        <input type="checkbox" id="phy" class="cls-input" name="skill" onClick="checkbox();" value="Physics">PHYSICS</input>
+                        <br>
+                        <input type="checkbox" id="bio" class="cls-input" name="skill" onClick="checkbox();" value="Biology">BIOLOGY</input>
+                        <br>
+                        <button type="submit">Submit</button><br></fieldset>
+            
+           </form>
+
+        </div>
+        <div>
+            
+            <fieldset><legend>CLASSES</legend>
+                <select id="selectbox" class="cls-input-spacing">
+                        <option  value="">-select-</option>
+                        <option  value="clsa">CLASS A</option>
+                        <option value="clsb">CLASS B</option>
+                       
+                    </select>
+                    <button type="submit" onclick="func()">submit</button>
+                </fieldset>        
+           
+        </div>
+        
+        
+    </fieldset>
+    </body>
+</html>
